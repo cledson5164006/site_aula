@@ -12,7 +12,7 @@ if(!isset($_POST['cpf']) || $_POST['cpf'] == ''){
 if(!isset($_POST['senha']) || $_POST['senha'] == ''){
     die("insira uma senha ");
 
-}$sql = "select nome from uarios where cpf ='$cpf' and senha = '$senha '";
+}$sql = "select nome from usuarios where cpf ='$cpf' and senha = '$senha '";
 
 $resultado = $conn->query($sql);
 $row = $resultado->fetch_assoc();
