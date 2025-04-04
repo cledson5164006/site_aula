@@ -1,4 +1,5 @@
 <?php
+
 include("autenticacao.php");
 
 echo"cpf: ".$_SESSION['cpf']. '<br>';

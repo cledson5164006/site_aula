@@ -7,7 +7,7 @@ if(!isset($_SESSION['cpf']) || $_SESSION['cpf'] ==''){
 }
 
 if(!isset($_SESSION['senha']) || $_SESSION['senha'] == ''){
-    header("location: index.php")
+    header("location: index.php");
     die;
 }
 ?>
