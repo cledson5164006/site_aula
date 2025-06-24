@@ -1,13 +1,8 @@
 <?php
 session_start();
 
-if(!isset($_SESSION['cpf']) || $_SESSION['cpf'] ==''){
-    header("location: index.php");
-    die;
-}
-
-if(!isset($_SESSION['senha']) || $_SESSION['senha'] == ''){
-    header("location: index.php");
-    die;
+if (empty($_SESSION['cpf']) || empty($_SESSION['senha'])) {
+    header("Location: index.php");
+    exit();
 }
 ?>
